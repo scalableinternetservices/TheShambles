@@ -1,6 +1,6 @@
 # README
 
-gTrack: A easy way to track prices of games from steam.
+* gTrack: A easy way to track prices of games from steam.
 
 Things you may want to cover:
 
