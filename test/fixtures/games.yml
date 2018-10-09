@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  steam_id: 1
+  name: MyString
+  price: 1.5
+  release_date: 2018-10-08
+  description: MyString
+  image: MyString
+
+two:
+  steam_id: 1
+  name: MyString
+  price: 1.5
+  release_date: 2018-10-08
+  description: MyString
+  image: MyString
