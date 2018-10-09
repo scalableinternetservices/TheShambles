@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* gTrack: A easy way to track prices of games from steam.
 
 Things you may want to cover:
 
