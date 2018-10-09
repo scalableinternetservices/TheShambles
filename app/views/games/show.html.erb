@@ -1,40 +1,37 @@
 <% provide(:title, @game.name) %>
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Steam:</strong>
-  <%= @game.steam_id %>
-</p>
+<h1 class="text-center game-header"><%= @game.name %></h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @game.name %>
-</p>
+<%= image_tag(@game.image, alt: "game banner", class: "center-block game-banner") %>
 
-<p>
-  <strong>Price:</strong>
-  <%= @game.price %>
-</p>
+<p class="pull-left"><strong>Steam ID:</strong> <%= link_to @game.steam_id, "https://store.steampowered.com/app/#{@game.steam_id}", target: "_blank" %></p>
 
-<p>
+<p class="pull-right">
   <strong>Release date:</strong>
   <%= @game.release_date %>
 </p>
 
-<p>
-  <strong>Description:</strong>
+<div class="clearfix clearfix-divider"></div>
+
+<p class="text-center game-price">
+  <strong>Current Price (USD):</strong>
+  <%= @game.price %>
+</p>
+
+
+<p class="text-center game-description">
   <%= @game.description %>
 </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @game.image %>
+
+<p class="text-center">
+  <% @game.genres.each do |genre| %>
+    <span class="badge badge-success badge-genre"><%= genre.name %></span>
+  <% end %>
 </p>
 
-<p>
-  <strong>Genres:</strong>
-  <%= @game.genres.map(&:name).join(', ') %>
-</p>
+<div class="clearfix clearfix-divider"></div>
 
 <%= link_to 'Edit', edit_game_path(@game) %> |
 <%= link_to 'Back', games_path %>
