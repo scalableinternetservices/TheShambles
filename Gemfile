@@ -8,6 +8,7 @@ end
 # New Gems
 gem 'valid_url' #url validation
 gem 'validates_timeliness' #date validation
+gem 'bootstrap-sass' #bootstrap
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
