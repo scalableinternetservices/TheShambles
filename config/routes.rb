@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/about'
+
   root :to => "games#index"
 
   get 'search_pages/search'
