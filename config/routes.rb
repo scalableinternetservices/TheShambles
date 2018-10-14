@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root :to => "games#index"
+
   get 'search_pages/search'
   post 'search_pages/search'
 
