@@ -27,6 +27,7 @@ class GamesController < ApplicationController
 
   # GET /games/1/edit
   def edit
+    
   end
 
   # POST /games
