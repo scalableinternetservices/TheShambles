@@ -18,6 +18,10 @@ GEM
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionpack-action_caching (1.2.0)
+      actionpack (>= 4.0.0, < 6)
+    actionpack-page_caching (1.1.1)
+      actionpack (>= 4.0.0, < 6)
     actionview (5.1.6)
       activesupport (= 5.1.6)
       builder (~> 3.1)
@@ -198,6 +202,8 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  actionpack-action_caching
+  actionpack-page_caching
   bcrypt (~> 3.1.7)
   bootstrap-sass
   bootstrap-will_paginate (= 0.0.10)
@@ -220,9 +226,6 @@ DEPENDENCIES
   validates_timeliness
   web-console (>= 3.3.0)
   will_paginate (= 3.1.0)
-
-RUBY VERSION
-   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.6

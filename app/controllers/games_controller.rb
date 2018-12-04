@@ -4,7 +4,7 @@ class GamesController < ApplicationController
   before_action :require_user, except: [:index, :show, :like]
   before_action :require_admin, only: [:create, :new, :edit, :update, :destroy]
   before_action :require_user_like, only: [:like]
-
+  caches_page :index, :show
   # GET /games
   # GET /games.json
   def index
